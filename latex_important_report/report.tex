@@ -1,0 +1,54 @@
+\documentclass[a4]{report}
+
+\input{./necessary/packages}
+
+\begin{document}
+	
+	\begin{titlepage}
+	%	\begin{figure}[!h]
+	%		\includegraphics[width=5cm]{./images/logo}
+	%			%\caption{un coucher de soleil} %la légende
+	%			%\label{fig:logo}
+	%	\end{figure} %on ferme l'environnement figure    		
+   		
+   		\mbox{}\vspace{5\baselineskip}\\
+   		\rmfamily\huge
+   		\centering
+   		% title
+   		\textsc{Report Title} \\[2ex]
+   		Subtitle
+   		\rmfamily\Large
+   		\vspace{1\baselineskip}\\ 		
+   		\input{version.txt}\mbox{}
+   		\vspace{5\baselineskip}\\
+   		\rmfamily\Large
+   		Author
+   		\vspace{1\baselineskip}\\
+		\begin{itemize}
+		\item[] \textbf{Création :}  Date
+   		\item[] \textbf{Dernière révision :} \today
+		\end{itemize}				
+		
+		\begin{abstract}
+
+abstract
+		\end{abstract}
+		
+   		
+	\end{titlepage}
+	\setlength{\parindent}{0pt}
+\bibliographystyle{plain}
+\tableofcontents
+
+	\input{./necessary/acronyms}
+	\input{./contents/intro}
+	\input{./contents/bilan}
+	\appendix
+	
+	\listoffigures
+	%\listoftables
+	\lstlistoflistings
+	\bibliography{./necessary/biblio} 
+	
+
+\end{document}

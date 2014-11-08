@@ -1,0 +1,40 @@
+\documentclass[a4paper]{report}
+% Packages
+\input{fichiers/utilitaires/packages.tex}
+
+% Début du document
+\geometry{top=1.5cm, bottom=1.5cm, left=2cm, right=2cm}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+%\begin{figure}
+%	\begin{center}
+%		\includegraphics[scale=0.1]{fichiers/images/pic}
+%	\end{center}	
+%\end{figure}
+
+
+%\maketitle
+
+\vspace*{\stretch{1}}
+\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{\centering{\LARGE{TP nX \\~\\ Names\\~\\ Class\\~\\ date}}}}
+\vspace*{\stretch{1}}
+	
+\end{titlepage}
+
+%\maketitle
+
+
+\tableofcontents
+\newpage
+\setlength{\parindent}{0pt}
+\input{./fichiers/chapitres/intro}
+\input{./fichiers/chapitres/rep}
+\appendix
+%\input{./fichiers/chapitres/code}
+
+%\input{fichiers/utilitaires/reflist.tex}
+\end{document}
